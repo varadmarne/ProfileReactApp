@@ -1,38 +1,47 @@
+
+/*
+
+Color shades from bynry.com
+
+*/
+:root {
+  --lighter-green:rgb(26,209,154);
+  --black: #050521;
+  --midnight-blue: #2a2a61;
+  --dodger-blue: #017ffa;
+  --alice-blue: #f1fbfe;
+  --white: #f3f3f3;
+  --midnight-blue-2: #1a1f4f;
+  --royal-blue: #0155f8;
+  --black-4: #1e2833;
+  --black-3: #14141c;
+  --black-2: #050521b3;
+}
+
 .App {
+
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: dodgerblue;
+  font-family: "Sora",'Roboto',Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.CoverBox{
+
+    height: calc(100vh - 2rem);
+    width: calc(100vw - 2rem);
+    border-radius: 2rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    overflow: auto;
+    scrollbar-width:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

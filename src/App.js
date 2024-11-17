@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
+import { BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
 import './App.css';
+import Profile from './profilePage/profilePage';
+import ProfIndex from './ProfileIndex/ProfileIndex';
+import Admin from './Admin/admin';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="CoverBox">
+
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<ProfIndex />} />
+            <Route path="/profile/:name" element={<Profile />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </BrowserRouter>
+        </div>
+        
     </div>
   );
 }

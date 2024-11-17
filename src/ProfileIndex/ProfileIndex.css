@@ -1,0 +1,192 @@
+  /*
+
+Color shades from bynry.com
+
+*/
+:root {
+    --lighter-green:rgb(26,209,154);
+    --black: #050521;
+    --midnight-blue: #2a2a61;
+    --dodger-blue: #017ffa;
+    --alice-blue: #f1fbfe;
+    --white: #f3f3f3;
+    --midnight-blue-2: #1a1f4f;
+    --royal-blue: #0155f8;
+    --black-4: #1e2833;
+    --black-3: #14141c;
+    --black-2: #050521b3;
+  }
+  .MobileButton{
+
+    display: none;
+  }
+  .MainWrapper{
+
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .Navbar{
+
+    width: 80%;
+    padding: 2%;
+    background-color: var(--dodger-blue);
+    display: flex;
+    border-radius: 99em;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    margin-top: 5vh;
+  }
+  .Navbar > input{
+    
+    font-family: "Sora",'Roboto',Arial, Helvetica, sans-serif;
+    width: 30%;
+    font-size: large;
+    padding: 0.5%;
+    padding-left: 2%;
+    border-radius: 99em;
+    border: 2px solid dodgerblue;
+    outline: none;
+  }
+  .Navbar > button{
+
+    font-family: "Sora",'Roboto',Arial, Helvetica, sans-serif;
+    padding: 0.5% 1% ;
+    background-color: white;
+    margin-right: 2vw;
+    text-decoration: none;
+    border: 2px solid dodgerblue;
+    border-radius: 5em;
+    font-size: large;
+    
+
+  }
+  .Navbar > button:hover{
+
+    background-color: white;
+    color: dodgerblue;
+  }
+  .CardSection{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .Wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+    gap:3vw;
+    height: 90%;
+    width: 90%;
+    scrollbar-width: none;
+    padding-top: 1vh;
+    align-items: center;
+  }
+  .Card {
+    width: 15em;
+    height: 20em;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg,var(--lighter-green) 30%,var(--dodger-blue));
+    border-radius: 2em;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    padding: 5% 3%;
+  }
+
+  .Card > img {
+    height: 5em;
+    width: 5em;
+    border-radius: 999em;
+  }
+
+  .Card > p{
+
+    max-height: 20vh;
+    min-height: 12vh;
+    width: 90%;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  .Card > button{
+
+    width: 60%;
+    font-family: "Sora",'Roboto',sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border: none;
+    background-color:aliceblue;
+  }
+
+  .NotFound{
+
+    font-size: x-large;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -20vh;
+  }
+@media (max-width: 800px) {
+
+    .Wrapper{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .NotFound{
+
+        margin-top: 0%;
+        grid-column: 1;
+        margin: 0;
+    }
+
+  }
+  
+  @media (max-width: 450px) {
+    
+    .MobileButton{
+
+      display: block;
+      
+    }
+    .DeskButton{
+
+      display: none;
+    }
+    .Navbar>input{
+
+        font-size: small ;
+        width: 60%;
+
+    }
+    .Navbar>button{
+
+        font-size: 10px;
+        width: 30%;
+        color: black;
+    }
+    .Wrapper{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+    }
+    .NotFound{
+
+        margin-top: 0%;
+        font-size: larger;
+    }
+  }

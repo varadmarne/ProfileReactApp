@@ -1,0 +1,278 @@
+
+.EditCardsWrapper{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+    gap:3vw;
+    width: 90%;
+    scrollbar-width: none;
+    padding-top: 1vh;
+    align-items: center;
+    margin-left: 4vw;
+    padding-bottom: 5vh;
+}
+.EditCards{
+
+    width: 15em;
+    height: 20em;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg,var(--lighter-green) 30%,var(--dodger-blue));
+    border-radius: 2em;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    padding: 5% 3%;
+}
+.EditCards > img {
+    height: 50%;
+    width: 50%;
+    margin-bottom: 1em ;
+    border-radius: 999em;
+}
+.EditCards > p{
+
+    width: 90%;
+    margin-top: 1em;
+  }
+  .EditCards > button{
+
+    width: 60%;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Sora",'Roboto',sans-serif;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border: none;
+    margin-bottom: 1em;
+    background-color:aliceblue;
+  }
+.AdminContainer {
+    font-family: "Sora", 'Roboto', system-ui, -apple-system, sans-serif;
+    padding: 3rem;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  
+  .AdminContainer h1 {
+    font-family: "Sora", 'Roboto', system-ui, -apple-system, sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  .AdminForm {
+    font-family: "Sora", 'Roboto', system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  .AdminForm label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .AdminInput,
+  .AdminTextarea {
+    font-family: "Sora", 'Roboto', system-ui, -apple-system, sans-serif;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #f9fafb;
+    color: #1f2937;
+  }
+  
+  .AdminInput:hover,
+  .AdminTextarea:hover {
+    border-color: #d1d5db;
+  }
+  
+  .AdminInput:focus,
+  .AdminTextarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgb(59 130 246 / 0.15);
+    background-color: white;
+  }
+  
+  .AdminTextarea {
+    resize: vertical;
+    min-height: 10rem;
+    max-height: 20rem;
+    line-height: 1.5;
+  }
+  
+  .AdminButton {
+    padding: 1rem 2.5rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    align-self: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+  
+  .AdminButton:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  .AdminButton:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+  
+  .MapContainer {
+    margin-top: 2.5rem;
+    height: 400px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1.5px solid #e5e7eb;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #1f2937;
+    font-weight: 600;
+  }
+  
+  .ErrorMessage {
+    color: #dc2626;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    background-color: #fee2e2;
+    border-radius: 0.5rem;
+    border: 1px solid #fecaca;
+  }
+  
+  
+  @media (max-width: 1300px) {
+
+    .EditCardsWrapper{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+    .EditCards{
+
+        height: 20em;
+        width: 15em;
+    }
+    .AdminContainer {
+      padding: 1.5rem;
+    }
+  
+    .AdminContainer h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .AdminForm {
+      padding: 1.5rem;
+      gap: 1.5rem;
+    }
+  
+    .AdminForm label {
+      font-size: 1rem;
+    }
+  
+    .AdminInput,
+    .AdminTextarea {
+      font-size: 0.95rem;
+      padding: 0.5%;
+      margin-left: -0.5%;
+    }
+  
+    .AdminButton {
+      padding: 0.875rem 2rem;
+      font-size: 1rem;
+    }
+  
+    .MapContainer {
+      height: 300px;
+      margin-top: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Small Mobile Styles */
+  @media (max-width: 900px) {
+
+    .EditCardsWrapper{
+
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 5vh;
+    }
+    .EditCards{
+
+        height: 20em;
+        width: 14em;
+    }
+    .AdminContainer {
+      padding: 1rem;
+    }
+  
+    .AdminContainer h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .AdminForm {
+      padding: 1.25rem;
+      gap: 1.25rem;
+    }
+  
+    .AdminInput,
+    .AdminTextarea {
+
+        padding: 0.5em;
+        margin-left: -0.5em;
+    }
+  
+    .AdminButton {
+      padding: 0.75rem 1.75rem;
+      font-size: 0.95rem;
+      width: 100%;
+    }
+  
+    .MapContainer {
+      height: 250px;
+    }
+  
+    h3 {
+      font-size: 1.125rem;
+    }
+  }
