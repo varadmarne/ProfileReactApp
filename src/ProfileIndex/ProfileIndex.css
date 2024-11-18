@@ -107,7 +107,7 @@ Color shades from bynry.com
   }
 
   .Card > img {
-    height: 5em;
+    height: 5;
     width: 5em;
     border-radius: 999em;
   }
@@ -139,7 +139,7 @@ Color shades from bynry.com
     grid-row: 1;
     margin-top: -20vh;
   }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     .Wrapper{
 
@@ -157,6 +157,7 @@ Color shades from bynry.com
   
   @media (max-width: 450px) {
     
+
     .MobileButton{
 
       display: block;

@@ -29,9 +29,9 @@
     padding: 5% 3%;
 }
 .EditCards > img {
-    height: 50%;
-    width: 50%;
-    margin-bottom: 1em ;
+    height: 5em;
+    width: 5em;
+    margin-bottom: 2vh;
     border-radius: 999em;
 }
 .EditCards > p{
